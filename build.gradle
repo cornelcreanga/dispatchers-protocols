@@ -1,0 +1,36 @@
+buildscript {
+    ext {
+        logbackVersion='1.2.3'
+        lombokVersion='1.18.6'
+        guavaVersion='27.1-jre'
+    }
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+
+repositories {
+    mavenLocal()
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: "maven"
+group 'com.ccreanga'
+project.version = '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.11
+
+dependencies {
+    testCompile group:'junit',name:'junit',version:'4.12'
+
+    compile group:'ch.qos.logback',name:'logback-classic',version:logbackVersion
+    compile group: 'com.google.guava', name: 'guava', version: guavaVersion
+    compileOnly group:'org.projectlombok',name:'lombok',version:lombokVersion
+    annotationProcessor group:'org.projectlombok',name:'lombok',version:lombokVersion
+}
+
