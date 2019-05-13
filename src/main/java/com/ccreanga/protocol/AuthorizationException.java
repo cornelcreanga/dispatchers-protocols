@@ -1,4 +1,4 @@
-package com.ccreanga.protocol.outgoing.client;
+package com.ccreanga.protocol;
 
 public class AuthorizationException extends RuntimeException {
 

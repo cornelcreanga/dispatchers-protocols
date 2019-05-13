@@ -2,6 +2,7 @@ package com.ccreanga.protocol.outgoing;
 
 
 
+import com.ccreanga.protocol.MalformedException;
 import com.ccreanga.protocol.outgoing.client.*;
 import com.ccreanga.protocol.outgoing.server.*;
 import java.io.IOException;
